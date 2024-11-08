@@ -1,0 +1,17 @@
+library(raster)
+library(ncdf4)
+library(sp,rgdal, rgeos)
+library(maptools)
+
+library(grangers)
+
+install.packages("readxl")
+library(readxl)
+library(lmtest)
+
+x= read_excel("path of directory containing excel file ")
+x
+head(x)
+
+grangertest(a ~ b, order = n, data = x)
+
